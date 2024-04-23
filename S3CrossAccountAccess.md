@@ -1,3 +1,5 @@
+**<p style="font-size: 16px;">How to access S3 bucket from another AWS account</p>**
+
 **How to access S3 bucket from another AWS account**
 
 ![High Level Design](./images/p1.png)
