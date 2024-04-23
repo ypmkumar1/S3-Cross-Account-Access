@@ -7,7 +7,8 @@ In this article, I will show you how to access S3 bucket from another AWS accoun
 
 Let’s start!
 
-Two ways — Using different type of policies
+** Two ways — Using different type of policies **
+
 A policy is an object assigned to a resource or identity which allows you to define the permissions it will have. We can distinguish two type of policies:
 
 * Identity-based policies. Attached directly to IAM identities (users, groups, roles). This type of policies grant permissions to an identity.
