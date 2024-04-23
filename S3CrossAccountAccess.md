@@ -65,6 +65,6 @@ And Bob needs an IAM policy like the following in his account B:
 
 Where 111111222222 is the Account A ID. This policy will allow Bob to assume Alice's role:
 
-aws sts assume-role --role-arn arn:aws:iam::111111222222:role/account-a-role --role-session-name bob-bucket-access --profile bob
+![High Level Design](./images/sts5.png)
 
 The temporary credentials returned after running the above command needs to be configured in AWS CLI and, after that, Bob is able to access Alice’s bucket!
