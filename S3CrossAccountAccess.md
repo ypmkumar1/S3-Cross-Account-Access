@@ -1,4 +1,4 @@
-How to access S3 bucket from another AWS account
+**How to access S3 bucket from another AWS account**
 
 ![High Level Design](./images/p1.png)
 
