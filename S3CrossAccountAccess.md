@@ -41,9 +41,8 @@ As a result, Bob will now be able to access Alice’s bucket from another AWS ac
 
 Easy, isn’t it?
 
---==================
+## Using STS Assume Role
 
-Using STS Assume Role
 Assuming an IAM role is another way to access S3 bucket from another AWS account. I must admit this is my preferred way 😬
 
 An IAM role is an identity with permission policies to determine the actions that such entity can perform. This role, unlike a user, is intended to be assumed by whoever needs it. One of the advantages of AWS roles is that they do not have passwords or access keys associated with them. Instead, they provide temporary security credentials for the session.
