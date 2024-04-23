@@ -11,9 +11,9 @@ Let’s start!
 
 A policy is an object assigned to a resource or identity which allows you to define the permissions it will have. We can distinguish two type of policies:
 
-* Identity-based policies. Attached directly to IAM identities (users, groups, roles). This type of policies grant permissions to an identity.
+* **Identity-based policies.** Attached directly to IAM identities (users, groups, roles). This type of policies grant permissions to an identity.
 
-* Resource-based policies. Attached to resources. These policies allow you to grant permissions to the principal defined in them.
+* **Resource-based policies.** Attached to resources. These policies allow you to grant permissions to the principal defined in them.
 
 As you might have guessed, we can use these two types of policies to achieve our goal!
 
