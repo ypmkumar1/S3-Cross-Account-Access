@@ -16,10 +16,12 @@ A policy is an object assigned to a resource or identity which allows you to def
 
 As you might have guessed, we can use these two types of policies to achieve our goal!
 
-Using resource-based policies
+## Using resource-based policies
+
 Resource-based policies in AWS are typically JSON documents that are attached to resources and determine the actions that the specified principal can perform.
 
-Let’s imagine we have the following scenario: A user in account B, Bob, wants to read and write to a bucket that Alice has in account A.
+Let’s imagine we have the following scenario: 
+**A user in account B, Bob, wants to read and write to a bucket that Alice has in account A.**
 
 ![High Level Design](./images/p2.png)
 
