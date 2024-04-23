@@ -1,5 +1,3 @@
-# https://awstip.com/how-to-access-s3-bucket-from-another-aws-account-55f1b0a878ed
-
 How to access S3 bucket from another AWS account
 
 ![High Level Design](./images/p1.png)
@@ -47,21 +45,23 @@ An IAM role is an identity with permission policies to determine the actions tha
 
 Most of the times, users need not only S3 buckets permission, but they also need access to other AWS resources. Using IAM roles you will be able to configure all accesses in a simpler way. Just add the necessary policies to the same role and that’s all! This is why I mentioned it is my preferred way.
 
+![High Level Design](./images/sts1.png)
+
 In order to achieve the same goal using AWS STS (Simple Token Service) assume role, there are two requirements:
 
 Account A needs to have a role (let’s call it account-a-role). This role should have a trust relationship with Account B which will allow users in this account to perform sts:AssumeRole.
 Bob needs permission in Account B to sts:AssumeRole in Account A.
 In other words, Alice needs to create a role just like this:
 
-![High Level Design](./images/sts1.png)
+![High Level Design](./images/sts2.png)
 
 Alice also needs to attach a policy to her role that indicates the permission she wants Bob to have in her bucket:
 
-![High Level Design](./images/sts2.png)
+![High Level Design](./images/sts3.png)
 
 And Bob needs an IAM policy like the following in his account B:
 
-![High Level Design](./images/sts3.png)
+![High Level Design](./images/sts4.png)
 
 Where 111111222222 is the Account A ID. This policy will allow Bob to assume Alice's role:
 
