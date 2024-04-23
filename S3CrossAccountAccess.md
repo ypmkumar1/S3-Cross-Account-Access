@@ -53,8 +53,9 @@ Most of the times, users need not only S3 buckets permission, but they also need
 
 In order to achieve the same goal using AWS STS (Simple Token Service) assume role, there are two requirements:
 
-Account A needs to have a role (let’s call it account-a-role). This role should have a trust relationship with Account B which will allow users in this account to perform sts:AssumeRole.
-Bob needs permission in Account B to sts:AssumeRole in Account A.
+1. Account A needs to have a role (let’s call it account-a-role). This role should have a trust relationship with Account B which will allow users in this account to perform sts:AssumeRole.
+2. Bob needs permission in Account B to sts:AssumeRole in Account A.
+
 In other words, Alice needs to create a role just like this:
 
 ![High Level Design](./images/sts2.png)
